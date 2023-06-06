@@ -1,0 +1,567 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  background-image: url("Imagini/23.jpg");
+
+}
+
+header {
+  background-image: url("Imagini/22.jpg");
+  color: rgb(119, 0, 0);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  display: block;
+  padding: 0.5em 1em;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  font-size: larger;
+}
+
+nav a:hover {
+  background-color: rgb(119, 0, 0);
+  color: white;
+  border: 5px;
+  border-radius: 10px;
+}
+
+#logo {
+  width: 20vw;
+  padding: 2vw;
+  align-content: baseline;
+}
+
+#logo:hover {
+  background: rgba(255, 0, 0, 0);
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-around;
+}
+
+#subtitlu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Garamond;
+  color: white;
+  background: rgba(96, 0, 0, 0.43);
+  font-size: 30px;
+  border-radius: 5px;
+}
+
+
+header .title {
+  font-size: 150%;
+  font-style: italic;
+  font-weight: bold;
+  padding: 1em;
+}
+
+main {
+  padding: 0 1em;
+}
+
+@media screen and (max-width:40em) {
+
+  #subtitlu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Garamond;
+    color: white;
+    background: rgba(96, 0, 0, 0.43);
+    font-size: 10px;
+  }
+
+  #logo {
+    width: 40vw;
+    padding: 2vw;
+    align-content: baseline;
+  }
+
+  #logo::before {
+    width: 40vw;
+    padding: 2vw;
+    align-content: baseline;
+  }
+
+  #logo::after {
+    transform: scale(4);
+  }
+
+  .zona1 {
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .stanga {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    padding: 2vw;
+  }
+
+  .titlu {
+    font-family: "Courier New", Courier, monospace;
+    color: rgb(255, 255, 255);
+    font-size: 5vw;
+    padding: 1vw;
+
+  }
+
+  .content {
+    font-family: "Courier New", Courier, monospace;
+    color: rgb(255, 255, 255);
+    font-size: 3vw;
+  }
+
+  .dreapta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+    align-items: center;
+    padding: 1vw;
+  }
+
+  .afis {
+    width: 30vw;
+    padding: 1vw;
+    align-self: center;
+    animation-name: glow;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+  }
+
+  .fig {
+    font-family: "Courier New", Courier, monospace;
+    color: rgb(255, 255, 255) !important;
+    font-size: 1vw;
+    padding: 1vw;
+  }
+}
+
+.gallery {
+
+  margin: 3vw;
+  border: 1px solid #ccc;
+  float: left;
+  width: 40vw;
+  height: 35vw;
+}
+
+
+.gallery img {
+  width: 39.5vw;
+  height: 34.5vw;
+
+  padding: 0vw;
+}
+
+@media screen and (min-width:40em) and (max-width:80em) {
+
+  #subtitlu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Garamond;
+    color: white;
+    background: rgba(96, 0, 0, 0.43);
+    font-size: 3vw;
+  }
+
+  #logo {
+    width: 40vw;
+    padding: 2vw;
+    align-content: baseline;
+  }
+
+  .zona1 {
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .stanga {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    padding: 2vw;
+  }
+
+  .titlu {
+    font-family: "Courier New", Courier, monospace;
+    color: rgb(255, 255, 255);
+    font-size: 4vw;
+    padding: 2vw;
+
+  }
+
+  .content {
+    font-family: "Courier New", Courier, monospace;
+    color: rgb(255, 255, 255);
+    font-size: 3vw;
+  }
+
+  .dreapta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+    align-items: center;
+    padding: 1vw;
+  }
+
+  .afis {
+    width: 30vw;
+    padding: 1vw;
+    align-self: center;
+    animation-name: glow;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+  }
+
+  .fig {
+    font-family: "Courier New", Courier, monospace;
+    color: rgb(255, 255, 255) !important;
+    font-size: 1vw;
+    padding: 1vw;
+  }
+}
+
+.gallery {
+
+  margin: 3vw;
+  float: left;
+  border: 1px solid #ccc;
+  width: 40vw;
+  height: 35vw;
+}
+
+.gallery img {
+  width: 39.5vw;
+  height: 34.5vw;
+
+  padding: 0vw;
+}
+
+
+
+
+@media screen and (min-width:80em) {
+  header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0em;
+  }
+
+  header ul {
+    display: flex;
+  }
+
+  header li a {
+    margin: 0;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 0.5em;
+  }
+
+  header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #subtitlu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Garamond;
+    color: white;
+    background: rgba(96, 0, 0, 0.43);
+    font-size: 30px;
+    border-radius: 1px;
+
+  }
+
+  .zona1 {
+    padding: 2vw;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+  }
+
+  .stanga {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    padding: 2vw;
+  }
+
+  .titlu {
+    font-family: "Courier New", Courier, monospace;
+    color: rgb(255, 255, 255);
+    font-size: 3vw;
+    padding: 1vw;
+  }
+
+  .content {
+    font-family: "Courier New", Courier, monospace;
+    color: rgb(255, 255, 255);
+    font-size: 1.5vw;
+  }
+
+  .dreapta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+    align-items: center;
+    padding: 2vw;
+  }
+
+  .afis {
+    width: 20vw;
+    align-self: center;
+    animation-name: glow;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+
+  }
+
+  .fig {
+    font-family: "Courier New", Courier, monospace;
+    color: rgb(255, 255, 255);
+    font-size: 1vw;
+    padding: 1vw;
+  }
+
+  .gallery {
+
+    margin: 3vw;
+    border: 1.5px solid #ccc;
+    float: left;
+    width: 25vw;
+    height: 20vw;
+  }
+
+
+  .gallery img {
+    width: 24.5vw;
+    height: 19.5vw;
+
+    padding: 0vw;
+  }
+
+
+}
+
+.dropbtn {
+  background-color: rgba(119, 0, 0, 0.312);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  font-size: larger;
+  border-radius: 5px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(119, 0, 0);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  background-color: rgb(119, 0, 0);
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(175, 0, 0)
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: rgba(119, 0, 0);
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px white;
+  }
+
+  5% {
+    box-shadow: 0 0 20px white;
+  }
+
+  25% {
+    box-shadow: 0 0 30px white;
+  }
+
+  50% {
+    box-shadow: 0 0 40px white;
+  }
+
+  75% {
+    box-shadow: 0 0 30px white;
+  }
+
+  100% {
+    box-shadow: 0 0 20px white;
+  }
+
+}
+
+.zona2 {
+  padding: 5vw;
+}
+
+.Spoiler {
+  position: relative;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 2vw;
+  margin: 4vw;
+  background-color: #4e1414eb;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  transition: font-size 0.3s ease-in-out;
+}
+
+.Spoiler::before,
+.Spoiler::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #4e1414eb;
+  z-index: -1;
+  transition: transform 0.3s ease-in-out;
+}
+
+.Spoiler::before {
+  transform-origin: left;
+}
+
+.Spoiler::after {
+  transform-origin: right;
+}
+
+.Spoiler:hover::before {
+  transform: skewX(30deg);
+}
+
+.Spoiler:hover::after {
+  transform: skewX(-30deg);
+}
+
+.Spoiler:hover {
+  font-size: 20px;
+}
+
+.Spoiler:hover::before,
+.Spoiler:hover::after {
+  transition-delay: 0.1s;
+}
+
+.filme{
+    list-style-type: none;
+    font-family: "Courier New", Courier, monospace;
+    color: rgb(255, 255, 255);
+    font-size: 1vw;
+}
+
+.title{
+    font-family: "Courier New", Courier, monospace;
+    color: rgb(255, 255, 255);
+    font-size: 1.5vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 1vw;
+    margin-left: 1.5vw;
+}
+#durata-totala {
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(255, 255, 255);
+  font-size: 1.5vw;
+  margin-left: 1.5vw;
+  padding-left: 1vw;
+}
+.titlue{
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(255, 255, 255);
+  font-size: 4vw;
+  font-weight: bold;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-top: 1vw;
+  margin-left: 1.5vw;
+}

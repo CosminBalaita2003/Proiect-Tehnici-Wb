@@ -1,0 +1,266 @@
+*{
+  box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    background-image: url("Imagini/23.jpg");
+    
+  }
+  
+  header {
+    background-image: url("Imagini/22.jpg");
+    color: rgb(119, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    display: block;
+    padding: 0.5em 1em;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-family: "Courier New", Courier, monospace;
+    font-size: larger;
+  }
+  
+  nav a:hover {
+    background-color: rgb(119, 0, 0);
+    color: white;
+    border: 5px;
+    border-radius: 10px;
+  }
+  
+  #logo {
+    width: 20vw;
+    padding: 2vw;
+    align-content: baseline;
+  }
+  
+  #logo:hover {
+    background: rgba(255, 0, 0, 0);
+  }
+  .dropbtn {
+    background-color: rgba(119, 0, 0, 0.312);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: "Courier New", Courier, monospace;
+    font-size: larger;
+    border-radius: 5px;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(119, 0, 0);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    background-color: rgb(119, 0, 0);
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: rgb(175, 0, 0)
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: rgba(119, 0, 0);
+  }
+  input:invalid {
+    border: 1px solid red;
+  }
+/* Stilizare pentru zona de mesaj text */
+textarea {
+    width: 100%;
+    padding: 10px;
+    resize: vertical;
+  }
+  
+  @media screen and (min-width:80em) {
+      
+#myForm{
+    padding: 3vw;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 3fr 1fr;
+    gap: 1vw;
+
+    width: 50vw;
+    margin: auto;
+}
+
+#myForm input{
+    padding: 1vw;
+    border-radius: 5px;
+    background-color: rgba(119, 0, 0, 0.716);;
+    border: 1px solid rgb(119, 0, 0);
+    font-family: "Courier New", Courier, monospace;
+    font-size: larger;
+    font-weight: bold;
+    color:white;
+}
+
+#myForm textarea{
+    padding: 1vw;
+    border-radius: 5px;
+    background-color: rgba(119, 0, 0, 0.442);;
+    border: 1px solid rgb(119, 0, 0);
+    font-family: "Courier New", Courier, monospace;
+    font-size: larger;
+    font-weight: bold;
+    color: white;
+}
+button{
+    padding: 1vw;
+    border-radius: 5px;
+    background-color: rgba(119, 0, 0, 0.716);;
+    border: 1px solid rgb(119, 0, 0);
+    font-family: "Courier New", Courier, monospace;
+    font-size: larger;
+    font-weight: bold;
+    color: white;
+}
+  }
+  @media screen and (max-width:40em) {
+    #myForm{
+        padding: 2vw;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 3fr 1fr;
+        margin-top: 5vw;
+        padding-top: 5vw;
+        gap: 1vw;
+        width: 70vw;
+        margin: auto;
+    }
+    
+    #myForm input{
+        padding: 1vw;
+        border-radius: 5px;
+        background-color: rgba(119, 0, 0, 0.716);;
+        border: 1px solid rgb(119, 0, 0);
+        font-family: "Courier New", Courier, monospace;
+        font-size: larger;
+        font-weight: bold;
+        color:white;
+    }
+    
+    #myForm textarea{
+        padding: 1vw;
+        border-radius: 5px;
+        background-color: rgba(119, 0, 0, 0.442);;
+        border: 1px solid rgb(119, 0, 0);
+        font-family: "Courier New", Courier, monospace;
+        font-size: larger;
+        font-weight: bold;
+        color: white;
+    }
+    button{
+        padding: 1vw;
+        border-radius: 5px;
+        background-color: rgba(119, 0, 0, 0.716);;
+        border: 1px solid rgb(119, 0, 0);
+        font-family: "Courier New", Courier, monospace;
+        font-size: larger;
+        font-weight: bold;
+        color: white;
+    }
+}
+@media screen and (min-width:40em) and (max-width:80em) {
+    #myForm{
+        padding: 3vw;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 3fr 1fr;
+        gap: 1vw;
+    
+        width: 80vw;
+        margin: auto;
+    }
+    
+    #myForm input{
+        padding: 1vw;
+        border-radius: 5px;
+        background-color: rgba(119, 0, 0, 0.716);;
+        border: 1px solid rgb(119, 0, 0);
+        font-family: "Courier New", Courier, monospace;
+        font-size: larger;
+        font-weight: bold;
+        color:white;
+    }
+    
+    #myForm textarea{
+        padding: 1vw;
+        border-radius: 5px;
+        background-color: rgba(119, 0, 0, 0.442);;
+        border: 1px solid rgb(119, 0, 0);
+        font-family: "Courier New", Courier, monospace;
+        font-size: larger;
+        font-weight: bold;
+        color: white;
+    }
+    button{
+        padding: 1vw;
+        border-radius: 5px;
+        background-color: rgba(119, 0, 0, 0.716);;
+        border: 1px solid rgb(119, 0, 0);
+        font-family: "Courier New", Courier, monospace;
+        font-size: larger;
+        font-weight: bold;
+        color: white;
+    }
+}
+#success,
+#error {
+  display: none;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+#error {
+  background-color: #ffdddd;
+  color: #ff0000;
+}
+
+#success {
+  background-color: #700404c0;
+  color: #ffffff;
+  width: 80%;
+  margin: auto;
+  margin-top: 2vw;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 5vw;
+
+}
